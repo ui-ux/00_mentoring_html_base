@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css</title>
+    <style>
+        .all-class {
+            width: 200px;
+            height: 200px;
+            background-color: Red;
+        }
+
+        #color-id-1 {
+            font-family:Segoe UI, sans-serif;
+            font-size:18px;
+
+        }
+
+        #color-id-2 p {
+            background-color: Red;
+            color: rgba(255, 255, 255, 1);
+        }
+
+        .all-class#color-id-3 {
+            text-align: center;
+        }
+
+        .test, .test1, .test2 {
+            text-transform: uppercase; /* capitalize, lowercase, uppercase */
+            font-family: arial, verdana, sans-serif;
+            font-size:10px;
+            /*            
+            font-size:1em;
+            font-size:1rem;
+            font-size:50%;
+            font-size:14px;
+            */
+            font-weight: bold;  /* 100 - 900 */
+            font-style:italic;  /* normal, italic, oblique */
+            text-align:left;  /* center, left, right, justify */
+            text-decoration: overline;   /* underline, overline, line-through */
+            text-indent: 20px;   /* отступ с первой строки */
+            letter-spacing: 3px; /* отступы между буквами */
+            word-spacing: 20px; /* отступы между словами */
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="all-class" id="color-id-1">
+        text test
+    </div>
+    <br>
+    <div class="all-class" id="color-id-2">
+        text test
+        <p>
+            text
+        </p>
+    </div>
+    <br>
+    <div class="all-class" id="color-id-3">
+        text test
+    </div>
+    <br>
+    <div class="all-class test">
+        text
+    </div>
+    <br>
+    <div class="all-class test1">
+        text text
+    </div>
+    <br>
+    <div class="all-class test2">
+        text text text text text text text text text text text text
+    </div>
+</body>
+</html>

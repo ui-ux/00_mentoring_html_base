@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>background</title>
+    <style>
+        .all-class {
+            width: 100px;
+            height: 100px;
+        }
+        
+        #color-id-1 {
+            background-color: chartreuse;
+        }
+        
+        #color-id-2 {
+            background-image: url("img/apple-m.jpg");
+        }
+
+        #color-id-3 {
+            background-image: url("img/apple-m.jpg");
+            background-repeat: no-repeat;
+
+            /*          
+            no-repeat - не повторять изображение
+            repeat-x - повторение только по оси х
+            repeat-y - повторение только по оси y
+            
+            */
+        }
+
+        #color-id-4 {
+            background-image: url("img/apple.jpg");
+            background-repeat: no-repeat;
+            background-size: contain;
+
+            /*          
+            background-size - 
+                cover - ширина или высота равнялеться ширине или высоте блока
+                contain - картинка целиком помещаеться внутрь блока
+            */
+        }
+
+        #color-id-5 {
+            background-image: url("img/apple.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <!--background-color-->
+    <div class="all-class" id="color-id-1">
+    </div><br>
+
+    <!--background-image-->
+    <div class="all-class" id="color-id-2">
+    </div><br>
+    
+    <!--background-repeat-->
+    <div class="all-class" id="color-id-3">
+    </div><br>
+
+    <!--background-size cover-->
+    <div class="all-class" id="color-id-4">
+    </div><br>
+
+    <!--background-size contain-->
+    <div class="all-class" id="color-id-5">
+    </div><br>
+
+
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Span Div</title>
+</head>
+<body>
+<!--
+    Тег <span> предназначен для определения строчных элементов документа.
+-->
+<p>
+    Lorem ipsum dolor sit amet, <span style="color: red">consectetur adipiscing elit</span>, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+</p>
+
+<!--
+    Тег <span> по-различному воспринимает свойства margin, padding, width и height
+    второй пример span style="display: inline-block;...
+-->
+Lorem ipsum dolor sit amet, <span style="background-color:red; width:200px; height:50px">consectetur adipiscing elit</span>, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+<br>
+Lorem ipsum dolor sit amet, <span style="display: inline-block; background-color:red; width:200px; height:50px">consectetur adipiscing elit</span>, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+<br>
+
+<!--
+   Элемент <div> является блочным элементом.
+-->
+
+<div>
+    Элемент <code>div</code> является блочным элементом.
+</div>
+
+<!--
+    Если размещать несколько дивов на странице, то каждый автоматически будет 
+    начинаться со следующей строки и заполнять 
+    по ширине все доступное пространство.
+-->
+
+
+<div style=" background-color:Yellow">текст текст текст текст</div>
+<div style=" background-color:Red">текст текст текст текст</div>
+<div style=" background-color:Green">текст текст текст текст</div>
+
+<br><br><br>
+<div style=" background-color:Yellow; width:200px; height:200px;">текст текст текст текст</div>
+<div style=" background-color:Red; width:200px; height:200px;">текст текст текст текст</div>
+<div style=" background-color:Green; width:200px; height:200px;">текст текст текст текст</div>
+
+<br><br><br>
+
+<!--
+   Свойство float указывает, что элемент будет обтекаем, 
+   и следовательно размещает его максимально прижатым в указанную сторону.
+        left - элемент прибьется влево и будет обтекаем справа
+        right - элемент прибьется вправо и будет обтекаем слева
+        none - для избежания какого-либо обтекания, но не всегда срабатывает
+-->
+<div style="clear: both">
+    <div style="background-color: Yellow; width: 200px; height: 200px; float: left">текст текст текст текст</div>
+    <div style="background-color: Green; width: 200px; height: 200px; float: left">текст текст текст текст</div>
+    <div style="background-color: Red; width: 200px; height: 200px; clear: both;">текст текст текст текст</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!--
+    список  <ol></ol> - арабские цифры
+        атрибут type
+            A - большие латинские буквы
+            a - маленькие латинские буквы
+            I - Большие римские цифры
+            i - Маленькие римские цифры
+            
+    список <ul></ul> - закрашенные кружочки
+        атрибут type
+            disc - закрашенные кружочки
+            circle - пустые кружочки
+            square - закрашенные прямоугольники
+            
+    <dl></dl> - является контейнером, в котором хранится список определений. 
+        Само определение заключается в тег <dt></dt>, а его описание в <dd></dd>
+        
+    убрать маркеры - list-style-type: none;
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>lists</title>
+</head>
+<body>
+    <ol>
+        <li>text</li>
+        <li>text</li>
+        <li>text</li>
+        <li>text</li>
+    </ol>
+    <ol type="A">
+        <li>text</li>
+        <li>text</li>
+        <li>text</li>
+        <li>text</li>
+    </ol>
+    <ol type="a">
+        <li>text</li>
+        <li>text</li>
+        <li>text</li>
+        <li>text</li>
+    </ol>
+    <ol type="I">
+        <li>text</li>
+        <li>text</li>
+        <li>text</li>
+        <li>text</li>
+    </ol>
+    <ol type="i">
+        <li>text</li>
+        <li>text</li>
+        <li>text</li>
+        <li>text</li>
+    </ol>
+    <ul >
+        <li>text</li>
+        <li>text</li>
+        <li>text</li>
+        <li>text</li>
+    </ul>
+    <ul type="circle">
+        <li>text</li>
+        <li>text</li>
+        <li>text</li>
+        <li>text</li>
+    </ul>
+    <ul type="square">
+        <li>text</li>
+        <li>text</li>
+        <li>text</li>
+        <li>text</li>
+    </ul>
+
+    <dl>
+        <dt>text</dt>
+        <dd>text text</dd>
+        <dt>text</dt>
+        <dd>text text</dd>
+    </dl>
+
+    <ul>
+        <li style="list-style-type: none">text</li>
+        <li style="list-style-type: none">text</li>
+        <li style="list-style-type: none">text</li>
+        <li style="list-style-type: none">text</li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!--
+<meta name="имя" content="значение"> 
+
+Условно метатеги можно разделить на три группы:
+
+1. содержащие управляющие команды для браузера;
+2. содержащие управляющие команды для поисковых систем;
+3. содержащие информацию о странице и ее авторе. 
+
+1 - Mетатеги, содержащие управляющие команды для браузера
+Таких метатегов немного, но на сегодняшний день это самые важные из метатегов.
+О том, что данный метатег предназначен для управления браузером,
+говорит атрибут http-equiv.
+
+Content-type - этот метатег указывает браузеру, в какой кодировке сделана страница.
+Content-Language - метатег сообщает, на каком языке написана страница. 
+pragma - этот метатег запрещает браузеру кэшировать страницу (то есть сохранять ее в памяти). 
+refresh - Этот метатег через N секунд после загрузки в браузер текущей страницы,
+перезагрузит вместо нее страницу URL (естественно, вместо N
+должна быть написана цифра - количество секунд, а вместо URL - правильный адрес страницы).
+
+        <meta http-equiv="Content-type" content="text/html;charset=windows-1251" />
+        <meta http-equiv="Content-Language" content="ru" />
+        <meta http-equiv="pragma" content="no-cache" />
+        <meta http-equiv="refresh" content="5; url=002_HTTP-Equip.htm" />  
+
+
+2 - Mетатеги, содержащие информацию о странице и ее авторе
+Generator - сообщает, с помощью какой программы был сгенерирован код страницы.
+site-created - указывает дату создания страницы.
+expires - этот метатег указывает, когда страница будет удалена.
+Author - содержит имя автора страницы.
+Copyright - указывает владельца авторских прав.
+Reply-to - указывает способ связи с автором страницы.
+Owner - указывает собственника страницы.
+Address - содержит адрес автора страницы.
+
+        <title>Mетатеги, содержащие информацию о странице и ее авторе</title>
+        <meta name="Generator" content="Visual Studio" />
+        <meta name="site-created" content="01.27.2012" />
+        <meta http-equiv="expires" content="Fri, 16 April 2014 23:59:59 GMT" />
+        <meta name="Author" content="Alex" /> 
+        <meta name="Copyright" content="Alex Corp" /> 
+        <meta name="Reply-to" content="alex@ua" /> 
+        <meta name="Owner" content="Alex" /> 
+        <meta name="Address" content="alex 324" />  
+        
+3 - Mетатеги, содержащие управляющие команды для поисковых систем
+
+description - содержит в себе основное описание страницы, является наиболее важным из метатегов.
+keywords - содержит ключевые слова, по которым будет индексироваться страница.
+robots - метатег управляет индексированием страниц.
+        index / noindex — индексировать / не индексировать эту страницу;
+        follow / nofollow — идти / не идти по ссылкам с этой страницы;
+        all — эквивалентно index, follow
+        none — эквивалентно noindex, nofollow
+        revisit, revisit-after - дает команду поисковой системе индексировать сайт с нужной периодичностью.     
+
+        <meta name="description" content="HTML примеры" />
+        <meta name="keywords" content="HTML, CSS, XML, XHTML, JavaScript, VBScript" />
+        <meta name="robots" content="index, follow" /> 
+        <meta name="revisit" content="3 days" /> 
+        <meta name="revisit-after" content="3 days" />   
+
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>meta</title>
+</head>
+<body>
+    
+</body>
+</html>
