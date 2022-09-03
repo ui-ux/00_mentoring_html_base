@@ -1,115 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Base tags</title>
-    <style>
-        code {
-            color: #000000;
-            background: chartreuse;
-        }
-/*        Атрибут style - является первой формой использования CSS*/
-    </style>
-</head>
-<body>
-    <!--
-        <html></html> - базовый контейнер
-        
-        <head></head> - информация о страницы, метатеги, ссылки на подключенные модули
-        
-        <title></title> - имя страницы, которое отображается пользователю на вкладке в браузере
-        
-        <body></body> - контейнером для всего содержимого
-    -->
-    <code>&lt;br&gt;</code><br>
-        Для реализации переноса строк <br> Для реализации переноса строк<br><br>
-    
-    
-    <code>&lt;pre&gt;</code>
-    <pre>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-        nisi ut aliquip ex ea commodo consequat.
-        
-    </pre>
-    
-                    <pre>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                        nisi ut aliquip ex ea commodo consequat.
-                    </pre>
-    
-                    <pre>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                        nisi ut aliquip ex ea commodo consequat.
-                    </pre>
-    
-    <code>&lt;p&gt;</code><br>
-    <p>
-        Параграф является одной из основных семантических единиц.
-        Параграфов может быть несколько на странице.
-    </p>
-    <p>
-        При этом между ними автоматически создаются отступы
-        и после каждого параграфа делается перенос строки
-    </p>
-    
-    <code>&lt;h1 h2 h3 h4 h5 h6&gt;</code><br>
+  </head>
+  <style>
+    /* style - is the first form of using CSS */
+    code {
+      color: black;
+      background: tomato;
+      border-radius: 4px;
+      display: inline-block;
+    }
+  </style>
+  <body>
     <!-- 
-    Для создания заголовков на странице существуют теги h1 - h6.
-    
-    h1 - наиболее важные заголовки, h2 -менее важные.... и h6 - самые незначительные
-    
-    h1 - должен быть один на странице,
-    h2 - около 2 - 4,
-    h3 - 4 - 8,
-     и далее 
+      html - base container
+      head - information about the page, meta tags, links to connected modules
+      title - the name of the page that is displayed to the user in a tab in the browser
+      body - container for all content that will be displayed to the user 
     -->
+
+    <code>&lt;br&gt;</code><br />
+    line wrapping <br />
+    line wrapping<br /><br />
+
+    <code> &lt;pre&gt; </code>
+    <pre>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+      nisi ut aliquip ex ea commodo consequat. 
+    </pre>
+    <pre>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+    </pre>
+
+    <code>&lt;p&gt;</code><br />
+    <p>
+      The paragraph is one of the main semantic units. There can be multiple
+      paragraphs per page.
+    </p>
+
+    <code>&lt;h1 h2 h3 h4 h5 h6&gt;</code><br />
+
+    <!-- 
+    To create headings on a page h1 - h6.
+    h1 - the most important headings, h2 - less important.... и h6 - самые незначительные
     
+    h1 - should be one per page
+    h2 - 2 - 4,
+    h3 - 4 - 8,
+     ... 
+    -->
+
     <h1>This is heading 1</h1>
     <h2>This is heading 2</h2>
     <h3>This is heading 3</h3>
     <h4>This is heading 4</h4>
     <h5>This is heading 5</h5>
     <h6>This is heading 6</h6>
-    
-    <code>&lt;hr&gt;</code><br>
+
+    <code>&lt;hr&gt;</code><br />
     <!--
-        hr определяет горизонтальную линию:
+        hr - horizontal line
     -->
-    
+
     <hr color="Red" />
     <hr width="600px" align="left" />
     <hr width="300px" />
     <hr width="800px" />
     <hr color="Red" size="4px" />
     <hr color="Blue" size="10px" />
-    <br>
+    <br />
     <!-- 
-         noshade - атрибут тега hr, который контролирует тень прямой.
+        controls shadow straight
     -->
     <hr noshade="noshade" />
-    
-    <code>&lt;strong&gt;</code><br>
-    <strong>все текстовое содержимое внутри себя делает полужирным очертанием</strong><br><br>
-    
-    <code>&lt;small&gt;</code><br>
-    <small>все текстовое содержимое внутри себя делает на одну единицу измерения размера шрифта меньше</small><br><br>
-    
-    <code>&lt;b&gt;</code><br>
-    <b>все текстовое содержимое внутри себя делает жирным очертанием</b><br><br>
-    
-    <code>&lt;i&gt;</code><br>
-    <i>все текстовое содержимое внутри себя делает курсивом</i><br><br>
-    
-    <code>&lt;sub&gt;</code><br>
-    text<sub>все текстовое содержимое внутри себя ставит в нижний индекс предыдущего текста</sub><br><br>
-    
-    <code>&lt;sup&gt;</code><br>
-    text<sup>все текстовое содержимое внутри себя ставит в верхний индекс предыдущего текста</sup><br><br>
 
+    <code>&lt;strong&gt;</code><br />
+    <strong>makes all text content inside it bold</strong><br /><br />
 
-</body>
+    <code>&lt;small&gt;</code><br />
+    <small>
+      all text content within itself is reduced by one unit of font size
+    </small>
+    <br /><br />
+
+    <code>&lt;b&gt;</code><br />
+    <b> bold font </b><br /><br />
+
+    <code>&lt;i&gt;</code><br />
+    <i>italic font</i><br /><br />
+
+    <code>&lt;sub&gt;</code><br />
+    text <sub>text in subscript of previous text</sub> <br /><br />
+
+    <code>&lt;sup&gt;</code><br />
+    text <sup>text in superscript of previous text</sup> <br /><br />
+  </body>
 </html>
