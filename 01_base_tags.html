@@ -9,8 +9,8 @@
   <style>
     /* style - is the first form of using CSS */
     code {
-      color: black;
-      background: tomato;
+      color: rgb(5, 243, 1);
+      background: rgb(65, 21, 14);
       border-radius: 4px;
       display: inline-block;
     }
@@ -103,5 +103,105 @@
 
     <code>&lt;sup&gt;</code><br />
     text <sup>text in superscript of previous text</sup> <br /><br />
+
+    <code> &lt;blockquote&gt; </code>
+    <blockquote>
+      The tag is for inserting quotes on the page. By default, the block has
+      indents on the right and left of 40px.
+    </blockquote>
+
+    <code> &lt;p dir="rtl"&gt; </code>
+    <p dir="rtl">
+      dir specifies the direction and display of the text <br />
+      rtl - text is displayed from right to left
+    </p>
+    <p dir="ltr">
+      dir specifies the direction and display of the text <br />
+      rtl - ltr - text is displayed from left to right
+    </p>
+
+    <code> &lt;u&gt; </code>
+    <p>
+      <u>underlined text</u>
+    </p>
+
+    <code> &lt;s&gt; </code>
+    <p>
+      <s>strikethrough text</s>
+    </p>
+
+    <!-- 
+        The meter tag is used to display numeric values within a given range
+        attributes:
+            - value - set value
+            - min - минимально возможное значение
+            - max - minimum possible value
+            - low - sets the limit at which the value is considered low
+            - high - sets the limit at which the value is considered high
+            - optimum - determines the best value
+      -->
+    <p>
+      <code> &lt;meter&gt; </code>
+      <meter min="0" max="100" low="33" high="66" optimum="80" value="50">
+        at 50/100
+      </meter>
+    </p>
+
+    <!-- 
+        The tag is used to show progress
+        - value - present value
+        - max   - maximum value
+      -->
+    <p>
+      <code> &lt;progress&gt; </code>
+      <progress value="78" max="100">
+        Uploaded on <span id="value">78</span>%
+      </progress>
+    </p>
+
+    <p>
+      <code> &lt;abbr&gt; </code><br />
+      <abbr title="Sets the tooltip text">text</abbr>
+    </p>
+
+    <p>
+      <code> &lt;cite&gt; </code><br />
+      <cite> https://translate.google.com.ua/ </cite>
+    </p>
+
+    <p>
+      <code> &lt;code&gt; </code><br />
+      <code> function add(x, y){ return x + y; } </code>
+    </p>
+
+    <p>
+      <code> &lt;del&gt; </code><br />
+      <del>text in 'del' tag</del>
+    </p>
+
+    <p>
+      <code> &lt;ins&gt; </code><br />
+      <ins>text in 'ins' tag</ins>
+    </p>
+
+    <p>
+      <code> &lt;q&gt; </code><br />
+      <q>text in 'q' tag</q>
+    </p>
+
+    <p>
+      <code> &lt;mark&gt; </code><br />
+      <mark> text in 'mark' tag </mark>
+    </p>
+
+    <p>
+      <code> &lt;samp&gt; </code><br />
+      <samp> A tag is used to display the result of a computer program </samp>
+    </p>
+
+    <p>
+      <code> &lt;var&gt; </code><br />
+      <var> text in 'var' tag </var>
+    </p>
   </body>
 </html>
