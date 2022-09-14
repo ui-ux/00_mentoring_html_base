@@ -1,64 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Span Div</title>
-</head>
-<body>
-<!--
-    Тег <span> предназначен для определения строчных элементов документа.
--->
-<p>
-    Lorem ipsum dolor sit amet, <span style="color: red">consectetur adipiscing elit</span>, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-</p>
+  </head>
+  <body>
+    <!--
+        The <span> tag is designed to define inline document elements
+    -->
+    <p>
+      Lorem ipsum dolor sit amet,
+      <span style="color: red">consectetur adipiscing elit</span>, sed do
+      eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    </p>
 
-<!--
-    Тег <span> по-различному воспринимает свойства margin, padding, width и height
-    второй пример span style="display: inline-block;...
--->
-Lorem ipsum dolor sit amet, <span style="background-color:red; width:200px; height:50px">consectetur adipiscing elit</span>, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-<br>
-Lorem ipsum dolor sit amet, <span style="display: inline-block; background-color:red; width:200px; height:50px">consectetur adipiscing elit</span>, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-<br>
+    <!--
+        The <span> tag treats the margin, padding, width, and height properties differently
+    -->
+    Lorem ipsum dolor sit amet,
+    <span style="background-color: red; width: 200px; height: 50px">
+      consectetur adipiscing elit </span
+    >, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    <br />
+    Lorem ipsum dolor sit amet,
+    <span
+      style="
+        display: inline-block;
+        background-color: red;
+        width: 200px;
+        height: 50px;
+      "
+      >consectetur adipiscing elit</span
+    >, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    <br />
 
-<!--
-   Элемент <div> является блочным элементом.
--->
+    <!--
+        The <div> element is a block element
+    -->
 
-<div>
-    Элемент <code>div</code> является блочным элементом.
-</div>
+    <div style="background-color: Yellow">текст текст текст текст</div>
+    <div style="background-color: Red">текст текст текст текст</div>
+    <div style="background-color: Green">текст текст текст текст</div>
 
-<!--
-    Если размещать несколько дивов на странице, то каждый автоматически будет 
-    начинаться со следующей строки и заполнять 
-    по ширине все доступное пространство.
--->
+    <br /><br /><br />
+    <div style="background-color: Yellow; width: 200px; height: 200px">
+      текст текст текст текст
+    </div>
+    <div style="background-color: Red; width: 200px; height: 200px">
+      текст текст текст текст
+    </div>
+    <div style="background-color: Green; width: 200px; height: 200px">
+      текст текст текст текст
+    </div>
 
+    <br /><br /><br />
 
-<div style=" background-color:Yellow">текст текст текст текст</div>
-<div style=" background-color:Red">текст текст текст текст</div>
-<div style=" background-color:Green">текст текст текст текст</div>
-
-<br><br><br>
-<div style=" background-color:Yellow; width:200px; height:200px;">текст текст текст текст</div>
-<div style=" background-color:Red; width:200px; height:200px;">текст текст текст текст</div>
-<div style=" background-color:Green; width:200px; height:200px;">текст текст текст текст</div>
-
-<br><br><br>
-
-<!--
-   Свойство float указывает, что элемент будет обтекаем, 
-   и следовательно размещает его максимально прижатым в указанную сторону.
-        left - элемент прибьется влево и будет обтекаем справа
-        right - элемент прибьется вправо и будет обтекаем слева
-        none - для избежания какого-либо обтекания, но не всегда срабатывает
--->
-<div style="clear: both">
-    <div style="background-color: Yellow; width: 200px; height: 200px; float: left">текст текст текст текст</div>
-    <div style="background-color: Green; width: 200px; height: 200px; float: left">текст текст текст текст</div>
-    <div style="background-color: Red; width: 200px; height: 200px; clear: both;">текст текст текст текст</div>
-</div>
-
-</body>
+    <!--
+        The 'float' property indicates that the element will be floated,
+        and carefully places it pressed as much as possible in the indicated direction.
+                  on the left - the element will be nailed to the left and flowed to the right
+                  on the right - the element will be nailed to the right and will flow around the left
+                  none - to get rid of any wrapping, but does not always work
+    -->
+    <div style="clear: both">
+      <div
+        style="
+          background-color: Yellow;
+          width: 200px;
+          height: 200px;
+          float: left;
+        "
+      >
+        текст текст текст текст
+      </div>
+      <div
+        style="
+          background-color: Green;
+          width: 200px;
+          height: 200px;
+          float: left;
+        "
+      >
+        текст текст текст текст
+      </div>
+      <div
+        style="background-color: Red; width: 200px; height: 200px; clear: both"
+      >
+        текст текст текст текст
+      </div>
+    </div>
+  </body>
 </html>

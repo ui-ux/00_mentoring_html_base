@@ -1,45 +1,78 @@
-<!--
-    тег <img> - изображение
-    атрибуты: 
-        src - source, источник откуда подгружается изображение
-        alt - альтернативный текст, который выведется если изображение не подгрузится
-        title - текст, отображаеться, при наведении
-        width, height - размеры изображения.
-        Если один из них отсутствует, то изображение растянется пропорцыонально второму.
-        По умолчанию изображение принимает свои действительные размеры. 
-
-        align - положение изображение относительно остального контента.
-            bottom - выравние изображения по нижней направляющей (по умолчанию)
-            middle - выравние изображения по центральной направляющей
-            top - выравние изображения по верхней направляющей
-
-Не имеет значения где размещено изображение, в начале текста, в середине или в конце. 
--->
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>img</title>
-</head>
-<body>
-    <img title="apple" alt="img" src="img/apple.jpg" height="127" width="192"/><br>
-    <img src="https://cdn.pixabay.com/photo/2015/01/21/14/14/apple-606761_960_720.jpg" height="227" width="292"/><br>
+  </head>
+  <body>
+    <!--
+    тег <img> - image
+    атрибуты: 
+        src - source from which the image is loaded
+        alt - alternative text that will be displayed if the image does not load
+        title - text displayed on hover
+        width, height - image dimensions
+         if one of them is missing, then the image will be stretched in proportion to the second
+         by default, the image takes its actual size
+
+        align - the position of the image relative to the rest of the content
+            bottom - align image to bottom guide (default)
+            middle - align image to center guide
+            top - align image to top guide
+    -->
+
+    <img src="img/apple.jpg" alt="img" title="apple" height="127" width="192" />
+    <br />
+
+    <img
+      src="https://cdn.pixabay.com/photo/2015/01/21/14/14/apple-606761_960_720.jpg"
+      alt="img"
+      title="apple"
+      height="227"
+      width="292"
+    />
+    <br />
 
     <div>
-        Картинка
-        <img title="apple" alt="img" align="bottom" src="img/apple.jpg" height="127" width="192"/>
-        в тексте
-    </div><br>
+      img
+      <img
+        title="apple"
+        alt="img"
+        align="bottom"
+        src="img/apple.jpg"
+        height="127"
+        width="192"
+      />
+      in text
+    </div>
+    <br />
     <div>
-        Картинка
-        <img title="apple" alt="img" align="middle" src="img/apple.jpg" height="127" width="192"/>
-        в тексте
-    </div><br>
+      img
+      <img
+        title="apple"
+        alt="img"
+        align="middle"
+        src="img/apple.jpg"
+        height="127"
+        width="192"
+      />
+      in text
+    </div>
+    <br />
     <div>
-        Картинка
-        <img title="apple" alt="img" align="top" src="img/apple.jpg" height="127" width="192"/>
-        в тексте
-    </div><br>
-</body>
+      img
+      <img
+        title="apple"
+        alt="img"
+        align="top"
+        src="img/apple.jpg"
+        height="127"
+        width="192"
+      />
+      in text
+    </div>
+    <br />
+  </body>
 </html>

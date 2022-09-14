@@ -1,16 +1,18 @@
-<!--
-    Состояния <a>
-    1. hover -  курсором мыши
-    2. visited - ссылки посешены 
-    3. active -  состояние ссылки, которая уже была посещена
--->
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Links</title>
     <style>
+      /* States <a>
+          1. hover - mouse cursor
+          2. visited - links visited
+          3. focus - applied when an element (such as a form input) receives focus
+          4. active - the state of a link that has already been visited 
+      */
+
       a {
         color: #0e0dc0;
       }
@@ -23,50 +25,54 @@
         color: #660192;
       }
 
+      a:focus {
+        color: #ff0000;
+      }
+
       a:active {
-        color: #ec3400;
+        color: #f1fe09;
       }
     </style>
   </head>
   <body>
     <!--
-    Тег a - это контейнер, который все текстовое содержимое внутри себя делает ссылкой
-    атрибуты: href, name, target, title, rel.
--->
+        The a tag is a container that makes all the text content inside it a link
+        attributes: href, name, target, title, rel
+    -->
 
     <!--
-    href - атрибут, который содержит в себе адрес страницы на которую ведет ссылка
-    # - ссылка на страницу, где расположен данный элемент
--->
+        href - an attribute that contains the address of the page to which the link leads
+        # - link to the page where this element is located
+    -->
     <a href="#">link</a><br />
     <a href="https://www.google.com.ua/">google</a><br />
     <a href="01_base_tags.html">
-      Ссылка, ведущая на внутренний ресурс, указанный в атрибуте href
+      Link leading to the internal resource specified in the 'href' attribute
     </a>
     <br />
 
     <!--
-    name - атрибут, который содержит в себе имя данной ссылки
--->
+        name - attribute that contains the name of this link
+    -->
     <a href="#" name="Link">name="Link"</a><br />
 
     <!--
-    target - атрибут, который говорит о том, каким образом открывать ссылку
-    _self - открыть в этом же окне, аналогично по умолчанию
-    _blank - открыть на новой вкладке
--->
+        target - an attribute that tells how to open the link
+        _self - open in the same window, similar to default
+        _blank - open in new tab
+    -->
     <a href="https://www.google.com.ua/" target="_self">target="_self"</a><br />
     <a href="https://www.google.com.ua/" target="_blank">target="_blank"</a
     ><br />
 
     <!--
-    title - атрибут, при наведении на ссылку появляеться подсказка
--->
+        title - attribute, when you hover over the link, a tooltip appears
+    -->
     <a href="#" title="атрибут title">title</a><br />
 
     <!--
-    Якорь - это значение в тексте на которое можно создать ссылку
--->
+        An anchor is a value in the text that can be linked to
+    -->
     <a href="#List33">33</a>
     <p>1</p>
     <p>2</p>

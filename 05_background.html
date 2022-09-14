@@ -1,78 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>background</title>
     <style>
-        .all-class {
-            width: 100px;
-            height: 100px;
-        }
-        
-        #color-id-1 {
-            background-color: chartreuse;
-        }
-        
-        #color-id-2 {
-            background-image: url("img/apple-m.jpg");
-        }
+      .all-class {
+        width: 100px;
+        height: 100px;
+        background-color: chartreuse;
+      }
 
-        #color-id-3 {
-            background-image: url("img/apple-m.jpg");
-            background-repeat: no-repeat;
+      #background-color {
+        background-color: rgb(0, 4, 255);
+      }
 
-            /*          
-            no-repeat - не повторять изображение
-            repeat-x - повторение только по оси х
-            repeat-y - повторение только по оси y
-            
-            */
-        }
+      #background-image {
+        background-image: url("img/apple-m.jpg");
+      }
 
-        #color-id-4 {
-            background-image: url("img/apple.jpg");
-            background-repeat: no-repeat;
-            background-size: contain;
+      #background-image-no-repeat {
+        background-image: url("img/apple-m.jpg");
+        background-repeat: no-repeat;
+        /*          
+            no-repeat - do not repeat image
+            repeat-x - repetition only along the x-axis
+            repeat-y - repeat only on the y-axis
+            space - the image is repeated so many times to fill the area,
+                    if it fails to do so, an indent is added between the images
+            space - the image is repeated so many times to fill the area,
+                    if it fails to do so, an indent is added between the images.
 
-            /*          
+        */
+      }
+
+      #background-size-contain {
+        background-image: url("img/apple.jpg");
+        background-repeat: no-repeat;
+        background-size: contain;
+
+        /*          
             background-size - 
-                cover - ширина или высота равнялеться ширине или высоте блока
-                contain - картинка целиком помещаеться внутрь блока
+                cover - width or height is equal to the width or height of the block
+                contain - the whole image is placed inside the block
             */
-        }
+      }
 
-        #color-id-5 {
-            background-image: url("img/apple.jpg");
-            background-repeat: no-repeat;
-            background-size: cover;
-            
-        }
-        
-        
+      #background-size-cover {
+        background-image: url("img/apple.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      .background-position {
+        width: 250px;
+        height: 250px;
+        background-color: bisque;
+        background-image: url(img/apple.jpg);
+        background-size: 50px auto;
+        background-repeat: no-repeat;
+        /* background-position: center; */
+        background-position: bottom right;
+      }
+
+      /*
+                 The background-attachment property allows you to fix the background image when scrolling the page. May have the following values:
+                     - fixed - makes the background image fixed.
+                     - scroll - allows the background to move along with the content.
+                     - local - the background is fixed based on the behavior of the element. If the element is scrollable, the background scrolls with the content, but the background that extends beyond the element remains in place.
+             */
+
+      .background-attachment {
+        height: 150px;
+        overflow: scroll;
+        background-image: url("img/apple.jpg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 150px;
+        background-attachment: scroll;
+      }
     </style>
-</head>
-<body>
-    <!--background-color-->
-    <div class="all-class" id="color-id-1">
-    </div><br>
+  </head>
+  <body>
+    <div class="all-class" id="background-color"></div>
+    <br />
 
-    <!--background-image-->
-    <div class="all-class" id="color-id-2">
-    </div><br>
-    
-    <!--background-repeat-->
-    <div class="all-class" id="color-id-3">
-    </div><br>
+    <div class="all-class" id="background-image"></div>
+    <br />
 
-    <!--background-size cover-->
-    <div class="all-class" id="color-id-4">
-    </div><br>
+    <div class="all-class" id="background-image-no-repeat"></div>
+    <br />
+
+    <div class="all-class" id="background-size-contain"></div>
+    <br />
 
     <!--background-size contain-->
-    <div class="all-class" id="color-id-5">
-    </div><br>
+    <div class="all-class" id="background-size-cover"></div>
+    <br />
 
+    <!--background-position-->
+    <div class="background-position"></div>
+    <br />
 
-
-</body>
+    <!--background-attachment-->
+    <div class="background-attachment">
+      It is a long established fact that a reader will be distracted by the
+      readable content of a page when looking at its layout. The point of using
+      Lorem Ipsum is that it has a more-or-less normal distribution of letters,
+      as opposed to using 'Content here, content here', making it look like
+      readable English. Many desktop publishing packages and web page editors
+      now use Lorem Ipsum as their default model text, and a search for 'lorem
+      ipsum' will uncover many web sites still in their infancy. Various
+      versions have evolved over the years, sometimes by accident, sometimes on
+      purpose (injected humour and the like).
+    </div>
+    <br />
+  </body>
 </html>

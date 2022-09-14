@@ -1,170 +1,168 @@
-<!--
-    tr - строка таблицы
-    td - ячейка в таблице
-    
-    th - заглавные ячейки
-    
-    border - толщина обводки
-    
-    colspan, rowspan -  позволяют обьединять ячейки
-    
-    cellpadding - отступы внутри ячеек таблицы
-    
-    cellspacing - отступы между ячейками таблицы, и отступы до границы таблицы
-    
-    align - выравнивание по горизонтали содержимого ячейки
-    
-    valign - выравнивание по вертикали содержимого ячейки
-     
--->
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>table</title>
-</head>
-<body>
+  </head>
+  <body>
+    <!--
+        tr - table row
+        td - cell in the table
+        th - header cells
+        border - the thickness of the stroke
+        colspan, rowspan - allow to merge cells
+        cellpadding - padding inside table cells
+        cellspacing - padding between table cells, and padding to the table border
+        align - horizontal alignment of the cell content
+        valign - vertical alignment of cell content
+        
+    -->
     <table border="1">
-        <tr>
-            <td>
-                text
-            </td>
-            <td>
-                text
-            </td>
-        </tr>
+      <tr>
+        <td>text</td>
+        <td>text</td>
+      </tr>
     </table>
-    <br>
+    <br />
 
     <table border="1">
-        <tr>
-            <td>
-                text
-            </td>
-        </tr>
-        <tr>
-            <td>
-                text
-            </td>
-        </tr>
+      <tr>
+        <td>text</td>
+      </tr>
+      <tr>
+        <td>text</td>
+      </tr>
     </table>
-    <br>
+    <br />
 
     <table border="1">
-        <tr>
-            <th>
-                text
-            </th>
-            <th>
-                text
-            </th>
-        </tr>
-        <tr>
-            <td>
-                text
-            </td>
-            <td>
-                text
-            </td>
-        </tr>
+      <tr>
+        <th>text</th>
+        <th>text</th>
+      </tr>
+      <tr>
+        <td>text</td>
+        <td>text</td>
+      </tr>
     </table>
-    <br>
+    <br />
 
     <table border="4">
-        <tr>
-            <td>
-                text
-            </td>
-            <td>
-                text
-            </td>
-        </tr>
+      <tr>
+        <td>text</td>
+        <td>text</td>
+      </tr>
     </table>
-    <br>
+    <br />
 
     <table border="1">
-        <tr>
-            <th>text</th>
-            <th colspan="2">text</th>
-        </tr>
-        <tr>
-            <td>text</td>
-            <td>text</td>
-            <td>text</td>
-        </tr>
+      <tr>
+        <th>text</th>
+        <th colspan="2">text</th>
+      </tr>
+      <tr>
+        <td>text</td>
+        <td>text</td>
+        <td>text</td>
+      </tr>
     </table>
-    <br>
+    <br />
 
     <table border="1">
-        <tr>
-            <th>text</th>
-            <td>text</td>
-        </tr>
-        <tr>
-            <th rowspan="2">text</th>
-            <td>text</td>
-        </tr>
-        <tr>
-            <td>text</td>
-        </tr>
+      <tr>
+        <th>text</th>
+        <td>text</td>
+      </tr>
+      <tr>
+        <th rowspan="2">text</th>
+        <td>text</td>
+      </tr>
+      <tr>
+        <td>text</td>
+      </tr>
     </table>
-    <br>
+    <br />
     <table border="1" cellpadding="10">
-        <tr>
-            <td>
-                text
-            </td>
-            <td>
-                text
-            </td>
-        </tr>
-        <tr>
-            <td>
-                text
-            </td>
-            <td>
-                text
-            </td>
-        </tr>
+      <tr>
+        <td>text</td>
+        <td>text</td>
+      </tr>
+      <tr>
+        <td>text</td>
+        <td>text</td>
+      </tr>
     </table>
 
-    <br>
+    <br />
     <table border="1" cellspacing="10">
-        <tr>
-            <td>
-                text
-            </td>
-            <td>
-                text
-            </td>
-        </tr>
-        <tr>
-            <td>
-                text
-            </td>
-            <td>
-                text
-            </td>
-        </tr>
+      <tr>
+        <td>text</td>
+        <td>text</td>
+      </tr>
+      <tr>
+        <td>text</td>
+        <td>text</td>
+      </tr>
     </table>
-    <br>
+    <br />
     <table width="400" border="1">
-        <tr>
-            <td align="left">text</td>
-            <td align="center">text</td>
-            <td align="right">text</td>
-        </tr>
+      <tr>
+        <td align="left">text</td>
+        <td align="center">text</td>
+        <td align="right">text</td>
+      </tr>
     </table>
-    <br>
+    <br />
+
     <table width="400" height="200" border="1">
-        <tr>
-            <td valign="top">text</td>
-            <td valign="center">text</td>
-            <td valign="bottom">text</td>
-        </tr>
+      <tr>
+        <td valign="top">text</td>
+        <td valign="center">text</td>
+        <td valign="bottom">text</td>
+      </tr>
     </table>
+    <br />
 
-
-</body>
+    <table cellpadding="2" cellspacing="0" border="1" rules="groups">
+      <!-- 
+            Attributes:
+                - groups - the line is displayed between the groups that are formed 
+                            by the <thead>, <tfoot>, <tbody>, <colgroup> or <col> tags.
+                - width - sets the column width
+                - span - specifies how many columns to apply the attributes to
+                - none - all borders are hidden
+        -->
+      <colgroup width="100" span="2">
+        <col span="1" style="background-color: red" />
+        <col style="background-color: yellow" />
+      </colgroup>
+      <colgroup width="50" align="center" span="4"></colgroup>
+      <tr>
+        <td>column 0</td>
+        <td>№ 1</td>
+        <td>№ 2</td>
+        <td>№ 3</td>
+        <td>№ 4</td>
+        <td>№ 5</td>
+      </tr>
+      <tr>
+        <td>Name 1</td>
+        <td>3</td>
+        <td>34</td>
+        <td>62</td>
+        <td>74</td>
+        <td>57</td>
+      </tr>
+      <tr>
+        <td>Name 2</td>
+        <td>3</td>
+        <td>6</td>
+        <td>72</td>
+        <td>56</td>
+        <td>47</td>
+      </tr>
+    </table>
+  </body>
 </html>
