@@ -1,84 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>position</title>
     <style>
-        .absolute {
-            border:1px solid black;
-            width:150px;
-            height:150px;
-            margin:15px;
-            position:absolute;
-        }
+      .absolute {
+        border: 1px solid black;
+        width: 150px;
+        height: 150px;
+        margin: 15px;
+        position: absolute;
+      }
 
-        .block-1 {
-            z-index:3;
-            top:30px;
-            left:30px;
-            background-color: #324480;
-        }
+      .block-1 {
+        z-index: 3;
+        top: 30px;
+        left: 30px;
+        background-color: #324480;
+      }
 
-        .block-2 {
-            z-index:2;
-            top:20px;
-            left:20px;
-            background-color: #f0ff34;
-        }
+      .block-2 {
+        z-index: 2;
+        top: 20px;
+        left: 20px;
+        background-color: #f0ff34;
+      }
 
-        .block-3 {
-            z-index:1;
-            background-color: #60ffdd;
-        }
+      .block-3 {
+        z-index: 1;
+        background-color: #60ffdd;
+      }
 
-        .relative {
-            width:150px;
-            height:150px;
-            position:relative;
-            background-color: #f0ff34;
-        }
+      .relative {
+        width: 150px;
+        height: 150px;
+        position: relative;
+        background-color: #f0ff34;
+      }
 
-        .relative-left {
-            width:150px;
-            height:150px;
-            background-color: #60ffdd;
-            position:relative;
-            left: 120px;
-        }
-        
-        .fixed {
-            width:150px;
-            height:150px;
-            background-color: #324480;
-            position:fixed;
-            top: 0;
-            right: 0;
-        }
+      .relative-left {
+        width: 150px;
+        height: 150px;
+        background-color: #60ffdd;
+        position: relative;
+        left: 120px;
+      }
+
+      .fixed {
+        width: 150px;
+        height: 150px;
+        background-color: #324480;
+        position: fixed;
+        top: 0;
+        right: 0;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div style="position: relative; width: 200px; height: 200px">
-        <div class="absolute block-1">
-        </div>
-        <div class="absolute block-2">
-        </div>
-        <div class="absolute block-3">
-        </div>
+      <div class="absolute block-1"></div>
+      <div class="absolute block-2"></div>
+      <div class="absolute block-3"></div>
     </div>
-    <br>
-    <div class="relative">
-    </div>
-    <br>
-    <div class="relative-left">
-    </div>
-    
-    <div class="fixed">
-    </div>
+    <br />
+    <div class="relative"></div>
+    <br />
+    <div class="relative-left"></div>
 
-    text <br> text <br>text <br>text <br>text <br>text <br>text <br>text <br>text <br>text <br>text <br>text <br>text <br>
-    text <br> text <br>text <br>text <br>text <br>text <br>text <br>text <br>text <br>text <br>text <br>text <br>text <br>
-    text <br> text <br>text <br>text <br>text <br>text <br>text <br>text <br>text <br>text <br>text <br>text <br>text <br>
-    text <br> text <br>text <br>text <br>text <br>text <br>text <br>text <br>text <br>text <br>text <br>text <br>text <br>
-    text <br> text <br>text <br>text <br>text <br>text <br>text <br>text <br>text <br>text <br>text <br>text <br>text <br>
-</body>
+    <div class="fixed"></div>
+
+    text <br />
+    text <br />text <br />text <br />text <br />text <br />text <br />text
+    <br />text <br />text <br />text <br />text <br />text <br />
+    text <br />
+    text <br />text <br />text <br />text <br />text <br />text <br />text
+    <br />text <br />text <br />text <br />text <br />text <br />
+    text <br />
+    text <br />text <br />text <br />text <br />text <br />text <br />text
+    <br />text <br />text <br />text <br />text <br />text <br />
+    text <br />
+    text <br />text <br />text <br />text <br />text <br />text <br />text
+    <br />text <br />text <br />text <br />text <br />text <br />
+    text <br />
+    text <br />text <br />text <br />text <br />text <br />text <br />text
+    <br />text <br />text <br />text <br />text <br />text <br />
+  </body>
 </html>

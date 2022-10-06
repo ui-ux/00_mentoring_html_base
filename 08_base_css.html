@@ -1,77 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>css</title>
     <style>
-        .all-class {
-            width: 200px;
-            height: 200px;
-            background-color: Red;
-        }
+      .all-class {
+        width: 200px;
+        height: 200px;
+        background-color: tomato;
+      }
 
-        #color-id-1 {
-            font-family:Segoe UI, sans-serif;
-            font-size:18px;
+      #color-id-1 {
+        font-family: Segoe UI, sans-serif;
+        font-size: 18px;
+      }
 
-        }
+      #color-id-2 p {
+        background-color: tomato;
+        color: rgba(255, 255, 255, 1);
+      }
 
-        #color-id-2 p {
-            background-color: Red;
-            color: rgba(255, 255, 255, 1);
-        }
+      .all-class#color-id-3 {
+        text-align: center;
+      }
 
-        .all-class#color-id-3 {
-            text-align: center;
-        }
-
-        .test, .test1, .test2 {
-            text-transform: uppercase; /* capitalize, lowercase, uppercase */
-            font-family: arial, verdana, sans-serif;
-            font-size:10px;
-            /*            
+      .test,
+      .test1,
+      .test2 {
+        text-transform: uppercase; /* capitalize, lowercase, uppercase */
+        font-family: arial, verdana, sans-serif;
+        font-size: 10px;
+        /*            
             font-size:1em;
             font-size:1rem;
             font-size:50%;
             font-size:14px;
             */
-            font-weight: bold;  /* 100 - 900 */
-            font-style:italic;  /* normal, italic, oblique */
-            text-align:left;  /* center, left, right, justify */
-            text-decoration: overline;   /* underline, overline, line-through */
-            text-indent: 20px;   /* отступ с первой строки */
-            letter-spacing: 3px; /* отступы между буквами */
-            word-spacing: 20px; /* отступы между словами */
-        }
-        
+        font-weight: bold; /* 100 - 900 */
+        font-style: italic; /* normal, italic, oblique */
+        text-align: left; /* center, left, right, justify */
+        text-decoration: overline; /* underline, overline, line-through */
+        text-indent: 20px; /* indent from first line */
+        letter-spacing: 3px; /* spacing between letters */
+        word-spacing: 20px; /* spacing between words */
+      }
     </style>
-</head>
-<body>
-    <div class="all-class" id="color-id-1">
-        text test
-    </div>
-    <br>
+  </head>
+  <body>
+    <div class="all-class" id="color-id-1">text test</div>
+    <br />
     <div class="all-class" id="color-id-2">
-        text test
-        <p>
-            text
-        </p>
+      text test
+      <p>text</p>
     </div>
-    <br>
-    <div class="all-class" id="color-id-3">
-        text test
-    </div>
-    <br>
-    <div class="all-class test">
-        text
-    </div>
-    <br>
-    <div class="all-class test1">
-        text text
-    </div>
-    <br>
+    <br />
+    <div class="all-class" id="color-id-3">text test</div>
+    <br />
+    <div class="all-class test">text</div>
+    <br />
+    <div class="all-class test1">text text</div>
+    <br />
     <div class="all-class test2">
-        text text text text text text text text text text text text
+      text text text text text text text text text text text text
     </div>
-</body>
+  </body>
 </html>

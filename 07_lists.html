@@ -1,92 +1,122 @@
-<!--
-    список  <ol></ol> - арабские цифры
-        атрибут type
-            A - большие латинские буквы
-            a - маленькие латинские буквы
-            I - Большие римские цифры
-            i - Маленькие римские цифры
-            
-    список <ul></ul> - закрашенные кружочки
-        атрибут type
-            disc - закрашенные кружочки
-            circle - пустые кружочки
-            square - закрашенные прямоугольники
-            
-    <dl></dl> - является контейнером, в котором хранится список определений. 
-        Само определение заключается в тег <dt></dt>, а его описание в <dd></dd>
-        
-    убрать маркеры - list-style-type: none;
--->
-
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>lists</title>
-</head>
-<body>
+    <style>
+      .img li {
+        list-style-image: url(img/apple-m.jpg);
+      }
+    </style>
+  </head>
+  <body>
     <ol>
-        <li>text</li>
-        <li>text</li>
-        <li>text</li>
-        <li>text</li>
+      <li>text</li>
+      <li>text</li>
+      <li>text</li>
+      <li>text</li>
     </ol>
     <ol type="A">
-        <li>text</li>
-        <li>text</li>
-        <li>text</li>
-        <li>text</li>
+      <li>text</li>
+      <li>text</li>
+      <li>text</li>
+      <li>text</li>
     </ol>
     <ol type="a">
-        <li>text</li>
-        <li>text</li>
-        <li>text</li>
-        <li>text</li>
+      <li>text</li>
+      <li>text</li>
+      <li>text</li>
+      <li>text</li>
     </ol>
     <ol type="I">
-        <li>text</li>
-        <li>text</li>
-        <li>text</li>
-        <li>text</li>
+      <li>text</li>
+      <li>text</li>
+      <li>text</li>
+      <li>text</li>
     </ol>
     <ol type="i">
-        <li>text</li>
-        <li>text</li>
-        <li>text</li>
-        <li>text</li>
+      <li>text</li>
+      <li>text</li>
+      <li>text</li>
+      <li>text</li>
     </ol>
-    <ul >
-        <li>text</li>
-        <li>text</li>
-        <li>text</li>
-        <li>text</li>
+    <ul>
+      <li>text</li>
+      <li>text</li>
+      <li>text</li>
+      <li>text</li>
     </ul>
     <ul type="circle">
-        <li>text</li>
-        <li>text</li>
-        <li>text</li>
-        <li>text</li>
+      <li>text</li>
+      <li>text</li>
+      <li>text</li>
+      <li>text</li>
     </ul>
     <ul type="square">
-        <li>text</li>
-        <li>text</li>
-        <li>text</li>
-        <li>text</li>
+      <li>text</li>
+      <li>text</li>
+      <li>text</li>
+      <li>text</li>
     </ul>
 
     <dl>
-        <dt>text</dt>
-        <dd>text text</dd>
-        <dt>text</dt>
-        <dd>text text</dd>
+      <dt>text</dt>
+      <dd>text text</dd>
+      <dt>text</dt>
+      <dd>text text</dd>
     </dl>
 
     <ul>
-        <li style="list-style-type: none">text</li>
-        <li style="list-style-type: none">text</li>
-        <li style="list-style-type: none">text</li>
-        <li style="list-style-type: none">text</li>
+      <li style="list-style-type: none">text</li>
+      <li style="list-style-type: none">text</li>
+      <li style="list-style-type: none">text</li>
+      <li style="list-style-type: none">text</li>
     </ul>
-</body>
+
+    <ul class="img">
+      <li>123</li>
+    </ul>
+  </body>
 </html>
+
+<!--
+     list <ol></ol> - Arabic numerals
+         type attribute
+             A - capital latin letters
+             a - small latin letters
+             I - Large Roman numerals
+             i - Small Roman numerals
+            
+     list <ul></ul> - filled circles
+         type attribute
+             disc - filled circles
+             circle - empty circles
+             square - filled rectangles
+            
+     <dl></dl> is a container that stores a list of definitions.
+         The definition itself is in the <dt></dt> tag, and its description in <dd></dd>
+        
+     remove markers - list-style-type: none;
+
+
+
+
+    ol li
+                    
+    Numbered list:
+    - armenian - traditional Armenian numbering.
+    - decimal - Arabic numbers (1, 2, 3, 4,...).
+    - decimal-leading-zero - Arabic numbers with leading zero for digits less than ten (01, 02, 03,...).
+    - georgian - traditional Georgian numbering.
+    - lower-alpha - lowercase latin letters (a, b, c, d,...).
+    - lower-greek - lowercase Greek letters (α, β, γ, δ,...).
+    - lower-latin - this value is similar to lower-alpha.
+    - lower-roman - Roman numerals in lower case (i, ii, iii, iv, v,...).
+    - upper-alpha - uppercase latin letters (A, B, C, D,...).
+    - upper-latin - this value is similar to upper-alpha.
+    - upper-roman - Roman numerals in upper case (I, II, III, IV, V,...).
+    - none - cancels markers for the list.
+                    
+-->

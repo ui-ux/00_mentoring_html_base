@@ -1,77 +1,75 @@
-<!--
-<meta name="имя" content="значение"> 
-
-Условно метатеги можно разделить на три группы:
-
-1. содержащие управляющие команды для браузера;
-2. содержащие управляющие команды для поисковых систем;
-3. содержащие информацию о странице и ее авторе. 
-
-1 - Mетатеги, содержащие управляющие команды для браузера
-Таких метатегов немного, но на сегодняшний день это самые важные из метатегов.
-О том, что данный метатег предназначен для управления браузером,
-говорит атрибут http-equiv.
-
-Content-type - этот метатег указывает браузеру, в какой кодировке сделана страница.
-Content-Language - метатег сообщает, на каком языке написана страница. 
-pragma - этот метатег запрещает браузеру кэшировать страницу (то есть сохранять ее в памяти). 
-refresh - Этот метатег через N секунд после загрузки в браузер текущей страницы,
-перезагрузит вместо нее страницу URL (естественно, вместо N
-должна быть написана цифра - количество секунд, а вместо URL - правильный адрес страницы).
-
-        <meta http-equiv="Content-type" content="text/html;charset=windows-1251" />
-        <meta http-equiv="Content-Language" content="ru" />
-        <meta http-equiv="pragma" content="no-cache" />
-        <meta http-equiv="refresh" content="5; url=002_HTTP-Equip.htm" />  
-
-
-2 - Mетатеги, содержащие информацию о странице и ее авторе
-Generator - сообщает, с помощью какой программы был сгенерирован код страницы.
-site-created - указывает дату создания страницы.
-expires - этот метатег указывает, когда страница будет удалена.
-Author - содержит имя автора страницы.
-Copyright - указывает владельца авторских прав.
-Reply-to - указывает способ связи с автором страницы.
-Owner - указывает собственника страницы.
-Address - содержит адрес автора страницы.
-
-        <title>Mетатеги, содержащие информацию о странице и ее авторе</title>
-        <meta name="Generator" content="Visual Studio" />
-        <meta name="site-created" content="01.27.2012" />
-        <meta http-equiv="expires" content="Fri, 16 April 2014 23:59:59 GMT" />
-        <meta name="Author" content="Alex" /> 
-        <meta name="Copyright" content="Alex Corp" /> 
-        <meta name="Reply-to" content="alex@ua" /> 
-        <meta name="Owner" content="Alex" /> 
-        <meta name="Address" content="alex 324" />  
-        
-3 - Mетатеги, содержащие управляющие команды для поисковых систем
-
-description - содержит в себе основное описание страницы, является наиболее важным из метатегов.
-keywords - содержит ключевые слова, по которым будет индексироваться страница.
-robots - метатег управляет индексированием страниц.
-        index / noindex — индексировать / не индексировать эту страницу;
-        follow / nofollow — идти / не идти по ссылкам с этой страницы;
-        all — эквивалентно index, follow
-        none — эквивалентно noindex, nofollow
-        revisit, revisit-after - дает команду поисковой системе индексировать сайт с нужной периодичностью.     
-
-        <meta name="description" content="HTML примеры" />
-        <meta name="keywords" content="HTML, CSS, XML, XHTML, JavaScript, VBScript" />
-        <meta name="robots" content="index, follow" /> 
-        <meta name="revisit" content="3 days" /> 
-        <meta name="revisit-after" content="3 days" />   
-
--->
-
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>meta</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body></body>
 </html>
+<!--
+<meta name="name" content="value">
+
+Conventionally, meta tags can be divided into three groups:
+
+1. containing control commands for the browser;
+2. containing control commands for search engines;
+3. containing information about the page and its author.
+
+1 - Meta tags containing control commands for the browser
+There are few such meta tags, but these are by far the most important of the meta tags.
+The fact that this meta tag is intended to control the browser,
+says the http-equiv attribute.
+
+Content-type - this meta tag tells the browser what encoding the page is made in.
+Content-Language - The meta tag tells what language the page is written in.
+pragma - this meta tag prevents the browser from caching the page (that is, storing it in memory).
+refresh - This meta tag is N seconds after the current page is loaded into the browser,
+will reload the URL page instead (naturally, instead of N
+a number should be written - the number of seconds, and instead of a URL - the correct address of the page).
+
+        <meta http-equiv="Content-type" content="text/html;charset=windows-1251" />
+        <meta http-equiv="Content-Language" content="en" />
+        <meta http-equiv="pragma" content="no-cache" />
+        <meta http-equiv="refresh" content="5; url=002_HTTP-Equip.htm" />
+
+
+2 - Meta tags containing information about the page and its author
+Generator - tells what program was used to generate the page code.
+site-created - specifies the date the page was created.
+expires - This meta tag indicates when the page will be deleted.
+Author - contains the name of the author of the page.
+Copyright - indicates the owner of the copyright.
+Reply-to - specifies how to contact the author of the page.
+Owner - specifies the owner of the page.
+Address - contains the address of the author of the page.
+
+        <title>Meta tags containing information about the page and its author</title>
+        <meta name="Generator" content="Visual Studio" />
+        <meta name="site-created" content="01/01/2020" />
+        <meta http-equiv="expires" content="Fri, 16 April 2020 23:59:59 GMT" />
+        <meta name="Author" content="Bill" />
+        <meta name="Copyright" content="Alex Corp" />
+        <meta name="Reply-to" content="Bill@ua" />
+        <meta name="Owner" content="Bill />
+        <meta name="Address" content="Bill" />
+        
+3 - Meta tags containing control commands for search engines
+
+description - contains the main description of the page, is the most important of the meta tags.
+keywords - contains the keywords for which the page will be indexed.
+robots - meta tag controls page indexing.
+        index / noindex - index / not index this page;
+        follow / nofollow - follow / do not follow links from this page;
+        all - equivalent to index, follow
+        none - equivalent to noindex, nofollow
+        revisit, revisit-after - instructs the search engine to index the site at the desired frequency.
+
+        <meta name="description" content="HTML examples" />
+        <meta name="keywords" content="HTML, CSS, XML, XHTML, JavaScript, VBScript" />
+        <meta name="robots" content="index, follow" />
+        <meta name="revisit" content="3 days" />
+        <meta name="revisit-after" content="3 days" />
+
+-->

@@ -1,116 +1,167 @@
-<!--
-form - содержит элементы формы
-    атрибуты
-        action - ссылка на файл, который должен будет обработать данные формы
-        method - метод запроса на сервер, есть два основных значения: GET и POST. По умолчанию GET
-        target - указывает, как будут отображены результаты, в текущем окне либо новой вкладке
-        autocomplete - контролирует автозаполнение форм, имеет проблемы с кроссбраузерностью
-        
-            <form action="Samefile.aspx" method="get" target="_blank" autocomplete="autocomplete">
-            </form>
-            name - имя элемента формы
-            value - значение, которое  будет передано на сервер 
-            type - тип поля
-                type="text" - текстовое поле для ввода
-                type="checkbox" - реализует поле с галочкой
-                type="radio" - реализует radio-переключатель
-                type="password" - реализует текстовое поле для ввода пароля. При этом все символы внутри заменяются на маркер "точка"
-                type="submit" - реализует кнопку отправки данных на сервер. При нажатии формируется запрос и отправляется файлу, указанному в атрибуте action=""
-                type="reset" - реализует кнопку очистки полей формы
-                type="button" позволяет создавать свои кнопки
-                
-                select - контейнер, содержащий в себе описание выпадающего списка
-                Содержимое тега option будет отображено пользователям в качестве элементов выпадающего списка,
-                но на сервер будут отправлены именно значения атрибутов value и name.
-                selected="selected" - устанавливает определенный элемент выпадающего списка, как значение по умолчанию
-                
-                
-                type="file" - предназначенный для создания поля выбора загрузки файла
-                type="hidden" - не отображается пользователю, при этом передается на сервер при отправке
-                
-                <textarea> - создания многострочного поля для ввода
-                Имеет специальные атрибуты rows cols, которые, соответственно, указывают его высоту и ширину
-                
-                <fieldset> предназначен для группировки элементов формы
-                    <legend> применяется для создания заголовка группы элементов формы
-                    
-                checked="checked" - отвечает за состояние элемента, выбран он или нет
-                disabled="disabled" - указывает на то, что элемент формы должен отображаться пользователю не активным
-                readonly="readonly" позволяет сделать элемент не восприимчивым к изменениям пользователя
-                
-                size - используется для указания размеров текстового поля для ввода
-                maxlength - используется для того, чтобы задать максимально допустимое значение для текстого поля
-                
--->
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>forms</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
     <style>
-        textarea {
-            resize: none; /* запретить изменение размеров <textarea> */
-        }
+      fieldset {
+        margin: auto;
+        border: 2px solid tomato;
+        width: 500px;
+      }
     </style>
-</head>
-<body>
-
+  </head>
+  <body>
     <form action="">
-        <fieldset style=" border: 2px solid #212fff; width: 500px;">
-            <legend>legend</legend>
-            <input type="text" name="name-1" value="value text" /><br>
-            <input type="text" disabled="disabled" name="name-2" value="disabled" /><br>
-            <input type="text" readonly="readonly" name="name-2-1" value="readonly" /><br>
-            <input type="text" size="50" name="name-2-2" value="" /><br>
-            <input type="text" maxlength="5" name="name-2-3" value="" /><br>
-            
-            checkbox<input type="checkbox" checked="checked" name="input_3" value="check" /><br>
-            checkbox<input type="checkbox" name="input_3_1" value="check" /><br>
-    
-            input-4 <input type="radio" name="input-4" value="" />
-            input-4 <input type="radio" name="input-4" value="" />
-            <br>
-            
-            password: <input type="password" name="password" value="1111111" />
-            <br><br>
-            <select name="select">
-                <option value="value1">value 1</option>
-                <option selected="selected" value="value2">value 2</option>
-                <option value="value3">value 3</option>
-                <option value="value4">value 4</option>
-            </select>
-            <br><br>
-    
+      <fieldset>
+        <legend>Legend</legend>
+        <p>
+          <input type="text" name="name-1" value="value text" />
+        </p>
+        <p>
+          <input type="text" name="name-2" placeholder="name placeholder" />
+        </p>
+        <p>
+          <input
+            type="text"
+            disabled="disabled"
+            name="name-2"
+            placeholder="disabled"
+          />
+        </p>
+        <p>
+          <input
+            type="text"
+            readonly="readonly"
+            name="name-3"
+            placeholder="readonly"
+          />
+        </p>
+        <p>
+          <input type="text" size="50" name="name-3" placeholder="size 50" />
+        </p>
+        <p>
+          <input
+            type="text"
+            maxlength="5"
+            name="name-4"
+            placeholder="maxlength 5"
+          />
+        </p>
+        <p>
+          <label for="checkbox-1">checkbox</label>
+          <input
+            id="checkbox-1"
+            type="checkbox"
+            checked="checked"
+            name="input-5"
+          />
+        </p>
+        <p>
+            <label for="radio-1">radio 1</label><input id="radio-1" type="radio" name="radioN" value="" /></br>
+            <label for="radio-2">radio 2</label><input id="radio-2" type="radio" name="radioN" value="" />
+        </p>
+        <p>
+            password:<input type="password" name="password" placeholder="password" />
+
+        </p>
+        <p>
+                    <select name="select">
+          <option value="value1">value 1</option>
+          <option selected="selected" value="value2">value 2</option>
+          <option value="value3">value 3</option>
+          <option value="value4">value 4</option>
+        </select>
+        </p>
+        <p>
             <select name="select2" multiple="multiple">
                 <option value="value1">value 1</option>
                 <option value="value2">value 2</option>
                 <option value="value3">value 3</option>
                 <option value="value4">value 4</option>
             </select>
-            <br><br>
+        </p>
+
+        <p>
             <select name="select">
                 <optgroup label="Action">
-                    <option value="value1">value 1</option>
-                    <option value="value2">value 2</option>
-                    <option value="value3">value 3</option>
+                  <option value="value1">value 1</option>
+                  <option value="value2">value 2</option>
+                  <option value="value3">value 3</option>
                 </optgroup>
                 <optgroup label="Fantastic">
-                    <option value="value4">value 4</option>
-                    <option value="value5">value 5</option>
+                  <option value="value4">value 4</option>
+                  <option value="value5">value 5</option>
                 </optgroup>
-            </select>
-            <br><br>
+              </select>
+        </p>
+        <p>
             <input type="file" name="input-file" value="value" />
-            <br><br>
+        </p>
+        <p>
             <input type="hidden" name="hidden" value="hidden 1" />
-            <br><br>
-            <textarea cols="10" rows="10"  name="textarea">text</textarea>
-            <br><br>
-            <input type="submit" name="submit" value="submit" /><br>
-            <input type="reset" name="reset" value="reset" /><br>
+        </p>
+        <p>
+            <!-- resize: none; /* prevent resizing <textarea> */ -->
+            <textarea cols="10" rows="10" name="textarea">text</textarea>
+        </p>
+        <p>
+            <input type="submit" name="submit" value="submit" />  
+        </p>
+        <p>
+            <input type="reset" name="reset" value="reset" />
+        </p>
+        <p>
             <input type="button" name="button" value="button" />
-        </fieldset>
+        </p>
+      </fieldset>
     </form>
-</body>
+  </body>
 </html>
+
+<!--
+form - contains form elements
+    attributes
+        action - a link to the file that will have to process the form data
+        method - request method to the server, there are two main values: GET and POST. Default GET
+        target - specifies how the results will be displayed, in the current window or in a new tab
+        autocomplete - controls autocomplete of forms, has problems with cross-browser compatibility
+        
+            <form action="Samefile.aspx" method="get" target="_blank" autocomplete="autocomplete">
+            </form>
+            name - the name of the form element
+            value - the value to be passed to the server
+            type - field type
+                type="text" - text input field
+                type="checkbox" - implements a checkbox
+                type="radio" - implements a radio switch
+                type="password" - implements a text field for entering a password. In this case, all characters inside are replaced by the marker "dot"
+                type="submit" - implements a button to send data to the server. When clicked, a request is generated and sent to the file specified in the action="" attribute
+                type="reset" - implements a button to clear form fields
+                type="button" allows you to create your own buttons
+                
+                select - a container containing a description of the dropdown list
+                The contents of the option tag will be displayed to users as dropdown list items,
+                but it is the values ​​of the value and name attributes that will be sent to the server.
+                selected="selected" - sets a specific dropdown item as the default value
+                
+                
+                type="file" - designed to create a file upload selection field
+                type="hidden" - not displayed to the user, but passed to the server when sending
+                
+                <textarea> - create a multiline input field
+                Has special attributes rows cols which respectively specify its height and width
+                
+                <fieldset> is for grouping form elements
+                    <legend> is used to create the title of a group of form elements
+                    
+                checked="checked" - is responsible for the state of the element, whether it is selected or not
+                disabled="disabled" - indicates that the form element should be displayed to the inactive user
+                readonly="readonly" allows you to make the element not receptive to user changes
+                
+                size - used to specify the size of the text field for input
+                maxlength - used to set the maximum allowed value for the text field
+                
+-->
